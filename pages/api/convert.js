@@ -107,7 +107,7 @@ module.exports = async (req, res) => {
           result = `${result}, skip-cert-verify=${proxy["skip-cert-verify"]}`;
         }
         if (proxy.sni) {
-          result = `${result}, sni=${proxy.sni}`;
+          result = `[Trojan] ${result}, sni=${proxy.sni}`;
         }
         return result;
       }
